@@ -1,0 +1,15 @@
+{
+    "build": {
+      "env": {
+        "PEOPLE_DATA_LABS_KEY": "@people_data_labs_key",
+        "TRESTLE_API_KEY": "@trestle_api_key"
+      }
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/src/index.js",
+        "methods": ["GET"]
+      }
+    ]
+  }
