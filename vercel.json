@@ -1,15 +1,17 @@
 {
-    "build": {
-      "env": {
-        "PEOPLE_DATA_LABS_KEY": "@people_data_labs_key",
-        "TRESTLE_API_KEY": "@trestle_api_key"
-      }
-    },
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/src/index.js",
-        "methods": ["GET"]
-      }
-    ]
-  }
+  "build": {
+    "env": {
+      "PEOPLE_DATA_LABS_KEY": "@people_data_labs_key",
+      "TRESTLE_API_KEY": "@trestle_api_key",
+      "NEXT_PUBLIC_SUPABASE_URL": "@supabase_url",
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_key"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/src/server.js",
+      "methods": ["GET"]
+    }
+  ]
+}
