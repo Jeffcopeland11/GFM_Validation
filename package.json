@@ -1,21 +1,25 @@
 {
-      "name": "gofundme-verification",
-      "version": "1.0.0",
-      "type": "module",
-      "scripts": {
-            "dev": "vite",
-            "build": "vite build",
-            "preview": "vite preview",
-            "verify": "node src/verification.js"
-      },
-      "dependencies": {
-            "axios": "^1.6.2",
-            "csv-parser": "^3.1.0",
-            "dotenv": "^16.3.1",
-            "geolib": "^3.3.3",
-            "node-cron": "^3.0.3"
-      },
-      "devDependencies": {
-            "vite": "^4.4.9"
-      }
-}
+    "name": "gfm-verification",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview --port 4173",
+      "verify": "node src/verification.js",
+      "start": "node src/server.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+      "axios": "^1.6.2",
+      "csv-parser": "^3.0.0",
+      "dotenv": "^16.3.1",
+      "express": "^4.18.2",
+      "geolib": "^3.3.3",
+      "node-cron": "^3.0.2"
+    },
+    "devDependencies": {
+      "vite": "^4.4.9"
+    }
+  }
+  

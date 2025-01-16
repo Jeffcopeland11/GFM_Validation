@@ -1,7 +1,4 @@
-import { CampaignVerifier } from './verification.js';
-    import { CSVProcessor } from './utils/csvProcessor.js';
-    import { Reporter } from './utils/reporter.js';
-    import cron from 'node-cron';
+# Campaign Verification System
 
     const INPUT_CSV = './data/campaigns.csv';
     const OUTPUT_CSV = './data/reports/report_' + 
